@@ -16,6 +16,8 @@ public class Movement : MonoBehaviour
         } else if(other.tag=="Slow"){
             moveSpeed = 10;
             Debug.Log("Slow active");
+            Destroy(other.gameObject, 0.5f);
+
         }
         }
     void OnCollisionEnter2D(Collision2D other) {
